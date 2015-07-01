@@ -1,0 +1,179 @@
+
+
+html {
+
+}
+
+body {
+	margin: 0;
+	font-family: 'myFirstFont';
+	background: #000000;
+}
+
+@font-face {
+	font-family: 'myFirstFont';
+	src: url('../fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+}
+
+.header-bar {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	// height: 65px;
+	top: 0px;
+  background-color: #1a82f7;
+  background-repeat: repeat-x;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#0AFCD2));
+	background: -webkit-linear-gradient(top, #1a82f7, #000000);
+	background: -moz-linear-gradient(top, #1a82f7, #000000);
+	background: -ms-linear-gradient(top, #1a82f7, #000000);
+	background: -o-linear-gradient(top, #1a82f7, #000000);
+}
+
+.who {
+	color: #FFFFFF;
+	width: 350px;
+	padding-left: 0;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.container {
+	padding-top: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.new {
+	width: 275px;
+	color: #fff;
+	margin: auto;
+}
+
+.btn {
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+  background-color: #1a82f7;
+  background-repeat: repeat-x;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#191919), to(#1a82f7));
+	background: -webkit-linear-gradient(top, #1a82f7, #191919);
+	background: -moz-linear-gradient(top, #1a82f7, #191919);
+	background: -ms-linear-gradient(top, #1a82f7, #191919);
+	background: -o-linear-gradient(top, #1a82f7, #191919);
+	text-align: center;
+	font-family: 'myFirstFont';
+	color: #FAF412;
+	font-size: 12pt;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.foform {
+	width: 300px;
+	height: 30px;
+	font-family: 'myFirstFont';
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+.description {
+	width: 300px;
+	height: 70px;
+	font-family: 'myFirstFont';
+	font-size:  14pt; 
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+.drop {
+	float: right;
+	margin-top: -45px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.drop li ul li {
+	// border-top: 0px;
+}
+
+ul {
+	list-style: none; 
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li {
+	// display: block; 
+	position: relative; 
+	float: left; 
+	margin-right: 25px;
+	// border: 1px solid #000
+}
+
+li ul {
+	display: none;
+}
+
+ul li a {
+	display: block;
+	// background: #1a82f7; 
+	// padding: 5px 10px 5px 10px; 
+	text-decoration: none;
+	white-space: nowrap; 
+	color: #fff;
+}
+
+ul li a:hover {
+	background: #2AD1E2;
+}
+
+li:hover ul {
+	display: block; 
+	position: absolute;
+}
+
+li:hover li {
+	float: none;
+}
+
+li:hover a {
+	background: #2AD1E2;
+}
+
+li:hover li a:hover {
+	background: #2AD1E2;
+}
+
+.clear {
+		clear: both;
+}
+
+@media all and (max-width: 600px) {
+	.drop {
+		float: none;
+		width: 275px;
+		margin: 20px auto 0 auto;
+		text-align: center;
+	}
+
+	ul li {
+		float: none;
+		display: inline;
+		margin-right: 0px;
+		padding: 5px;
+	}
+
+	.drop li a {
+		float: none;
+		display: inline;
+	}
+
+	.who {
+		margin: 0 auto;
+	}
+
+
+}
